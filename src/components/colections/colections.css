@@ -1,0 +1,104 @@
+.collections {
+   width: 100%;
+   height: 15.5rem;
+   background: linear-gradient(to right, #F9F6F1 50%, #F4F4F4 50%);
+}
+
+.collections > .container {
+   display: flex;
+}
+
+/* ========= MAN ========== */
+
+.man_col {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.description > h1{
+   font-size: 1.5rem;
+}
+
+.description > button {
+   width: 5rem;
+   margin-top: 2rem;
+}
+
+.arrow {
+   color: white;
+   font-size: 1.5rem;
+   padding-top: 0.2rem;
+}
+
+.man_img {
+   width: 40%;
+   height: 100%;
+   background: url(../../assets/man.png) no-repeat;
+   background-size: contain;
+   background-position-y: bottom;
+}
+
+/* ========= WOMAN ========== */
+
+.woman_col {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.woman_img {
+   width: 40%;
+   height: 100%;
+   background: url(../../assets/woman.png) no-repeat;
+   background-size: contain;
+   background-position-y: bottom;
+}
+
+/* ============ MEDIA ============ */
+
+@media screen and (max-width: 1110px) {   
+   .woman_col {
+      padding-left: 0.5rem;
+   }
+   
+   .man_img {
+      width: 50%;
+   }
+
+   .woman_img {
+      width: 55%;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .collections {
+      width: 100%;
+      height: 25rem;
+      background: linear-gradient(to bottom, #F9F6F1 50%, #F4F4F4 50%);
+   }
+   
+   .collections > .container {
+      flex-direction: column;
+   } 
+
+   .man_col {
+      width: 100%;
+   }
+
+   .woman_col {
+      width: 100%;
+   }
+
+   .man_img {
+      width: 50%;
+   }
+
+   .woman_img {
+      width: 60%;
+   }
+}

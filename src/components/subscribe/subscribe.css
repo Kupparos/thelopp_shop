@@ -1,0 +1,71 @@
+.subscribe {
+   height: 11rem;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+.subscribe > .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.subscribe > .container > h1 {
+   color: white;
+   font-size: 1.8rem;
+   font-weight: 600;
+   margin: 0;
+}
+
+.email_input {
+   width: 30rem;
+}
+
+.ant-input-affix-wrapper-lg {
+   width: 80%;
+}
+
+.ant-btn-primary {
+   border-color: #d7b399;
+   background: #d7b399;
+}
+
+.ant-btn-primary:hover {
+   border-color: #d7b399;
+   background: #d7b399;
+}
+
+.ant-btn-lg {
+   padding: 0.4rem 2.5rem;
+}
+
+/* ============ MEDIA ============ */
+
+@media screen and (max-width: 1110px) {   
+   .subscribe > .container > h1 {
+      font-size: 1.2rem;
+   }
+
+   .email_input {
+      width: 20rem;
+   }
+
+   .ant-btn-lg {
+      padding: 0.4rem 1rem;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .subscribe > .container {
+      flex-direction: column;
+   }
+
+   .email_input {
+      width: 18rem;
+   }
+
+   .ant-input-affix-wrapper-lg {
+      width: 95%;
+   }
+}

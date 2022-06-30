@@ -1,0 +1,252 @@
+.first_screen {
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(to bottom, #f9f6f1 85%, white 15%);
+}
+/* ============ MENU ============= */
+.menu {
+  display: grid;
+  grid-template-columns: 42% auto auto auto;
+  height: 9rem;
+  align-items: center;
+}
+
+a,
+a:hover {
+  color: black;
+}
+
+.dropdown {
+  font-size: medium;
+  display: flex;
+  gap: 2rem;
+}
+
+.ant-space-item {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: x-large;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.logo_icon {
+  color: #d7b399;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.conditions {
+  display: flex;
+  font-size: medium;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.bag {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bag_icon {
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+
+.bag_value {
+  background-color: #d7b399;
+  color: white;
+  font-weight: 600;
+  width: 3.5rem;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 0 50%);
+  display: flex;
+  justify-content: center;
+  padding-left: 0.8rem;
+}
+
+/* ============== SLIDER ========== */
+
+.slider {
+  width: 100%;
+  height: calc(800px - 9rem);
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 7.5rem;
+}
+
+.swiper-slide {
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 3.2rem;
+}
+
+.swiper-pagination-bullet {
+   height: 0.4rem;
+   width: 2.5rem;
+   border-radius: 0;
+}
+
+.swiper-pagination-bullet-active {
+   background: #D7B399;
+}
+
+.proposal {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.proposal h2 {
+   font-size: 2rem;
+   margin-bottom: 0;
+}
+
+.proposal h1 {
+   font-size: 3.5rem;
+   font-weight: bold;
+   margin-bottom: 0;
+}
+
+.proposal button {
+   width: 15rem;
+   height: 3.5rem;
+}
+
+.proposal a {
+   color: white;
+   font-size: 1.2rem;
+   font-weight: 400;
+}
+
+.img {
+   width: 50%;
+   height: 100%;
+   background: url(../../assets/running_shoes.png) no-repeat;
+   background-size: contain;
+   margin-top: 10rem;
+   padding-top: 3rem;
+   text-align: end;
+}
+
+.old_prise {
+   margin: 0;
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-decoration: line-through;
+}
+
+.new_prise {
+   margin: 0;
+   font-size: 2.6rem;
+   font-weight: 600;
+   color: #D84033;
+}
+
+/* ============ MEDIA ============ */
+
+@media screen and (max-width: 1110px) {
+   .menu {
+      grid-template-columns: 35% auto auto auto;
+   }
+   
+   .dropdown {
+      gap: 0.5rem;
+   }
+   
+   .logo_icon {
+      margin-left: 0.5rem;
+   }
+
+   .conditions {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+   }
+
+   .img {
+      margin-top: 17rem;
+      padding-top: 1rem;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .menu {
+      height: 13rem;
+      grid-template-columns: 55% 45%;
+   }
+
+   .dropdown {
+      padding-left: 0.5rem;
+      flex-direction: column;
+   }
+
+   .conditions {
+      align-items: start;
+      padding-left: 0.5rem;
+   }
+
+   .logo {
+      text-align: right;
+      padding-right: 0.5rem;
+   }
+
+   .logo_icon {
+      margin: 0;
+      font-size: 5rem;
+   }
+
+   .bag {
+      padding-right: 0.5rem;
+   }
+
+   .slider {
+      height: calc(800px - 13rem);
+   }
+
+   .proposal {
+      align-content: space-evenly;
+   }
+
+   .proposal h2 {
+      font-size: 1.5rem;
+   }
+   
+   .proposal h1 {
+      font-size: 2.5rem;
+      margin-bottom: 8rem;
+   }
+
+   .img {
+      margin-top: 20rem;
+      padding: 0;
+      background-position-y: 20%;
+   }
+
+   .old_prise {
+      font-size: 1rem;
+   }
+   
+   .new_prise {
+      font-size: 2rem;
+   }
+}

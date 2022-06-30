@@ -1,0 +1,27 @@
+.free_shiping {
+   background-color: #212121;
+   color: white;
+   height: 14.5rem;
+   text-align: center;
+}
+
+.title {
+   font-size: 2rem;
+   padding-top: 5rem;
+}
+
+.subtitle {
+   padding-top: 0.5rem;
+   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 700px) {
+   .title {
+      padding-top: 25%;
+      font-size: 1.5rem;
+   }
+
+   .subtitle {
+      font-size: 1rem;
+   }
+}

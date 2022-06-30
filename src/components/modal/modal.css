@@ -1,0 +1,81 @@
+.modal_card {
+   display: grid;
+   grid-template-columns: 20% 25% 25% 30%;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0.8rem 0;
+}
+
+.modal_img {
+   display: flex;
+   justify-content: center;
+}
+
+.modal_card_img {
+   height: 4rem;
+}
+
+.modal_card_info {
+   display: flex;
+   flex-direction: column;
+   margin-left: 0.5rem;
+}
+
+.modal_card_info > p {
+   margin: 0;
+   font-weight: 500;
+}
+
+.modal_card_amount {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal_card_count_btn {
+   background-color: transparent;
+   margin: 0 0.5rem;
+   padding-top: 0.2rem;
+   cursor: pointer;
+}
+
+.modal_card_btn {
+   color: white;
+   cursor: pointer;
+   padding: 0.2rem 0;
+   border-radius: 2px;
+   margin-left: 1.5rem;
+}
+
+.ant-modal-footer {
+   display: grid;
+   grid-template-columns: 50% 25% 25%;
+   align-items: center;
+}
+
+.modal_total_price {
+   text-align: left;
+   font-size: 1rem;
+}
+
+/* ============ MEDIA ============ */
+
+@media screen and (max-width: 500px) {
+   .modal_card {
+      grid-template-columns: 50% 45%;
+      gap: 0.5rem;
+   }
+   .modal_card_info {
+      text-align: center;
+   }
+   .modal_card_btn {
+      margin-left: 0;
+   }
+   .ant-modal-footer {
+      grid-template-columns: 100%;
+      gap: 0.5rem;
+   }
+   .ant-modal-footer .ant-btn+.ant-btn:not(.ant-dropdown-trigger) {
+      margin-left: 0;
+   }
+}
