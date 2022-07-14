@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/thelopp_shop/static/css/main.be6837d9.css",
+    "main.js": "/thelopp_shop/static/js/main.2191f72e.js",
+    "static/media/cocktail_dress.png": "/thelopp_shop/static/media/cocktail_dress.09f20e916e4e76995fe7.png",
+    "static/media/shirt.png": "/thelopp_shop/static/media/shirt.4ae34616b6693ac6d515.png",
+    "static/media/running_shoes.png": "/thelopp_shop/static/media/running_shoes.4476b57bf8e18e01f504.png",
+    "static/media/woman.png": "/thelopp_shop/static/media/woman.b27bae3d02f1f1b83493.png",
+    "static/media/man.png": "/thelopp_shop/static/media/man.8b9980667cb4af92dd1f.png",
+    "index.html": "/thelopp_shop/index.html",
+    "main.be6837d9.css.map": "/thelopp_shop/static/css/main.be6837d9.css.map",
+    "main.2191f72e.js.map": "/thelopp_shop/static/js/main.2191f72e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be6837d9.css",
+    "static/js/main.2191f72e.js"
+  ]
+}
